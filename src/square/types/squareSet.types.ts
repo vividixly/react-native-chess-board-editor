@@ -1,7 +1,6 @@
-import type { ColorValue } from 'react-native';
+import { type Square } from '../types/square.types';
 
 export interface SquareSet {
-  light: ColorValue;
-  dark: ColorValue;
-  name?: string;
+  squares: Square[];
+  name: string;
 }
