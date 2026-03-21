@@ -14,7 +14,7 @@ export function useSvgSquareSet(
   const getSvgSquare = useCallback(
     (type: Square['type']) => {
       const square: Square | undefined = squareSet.squares.find(
-        (s) => s.type == type
+        (s) => s.type === type
       );
       if (!square) return null;
       return <SvgSquare size={size} color={square.color} />;
