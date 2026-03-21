@@ -4,4 +4,4 @@ export {
   type SquareSet,
   useSvgSquareSet,
 } from './square';
-export { type Color, type ColorSet } from './color';
+export { type Player, type PlayerSet } from './player';
