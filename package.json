@@ -10,10 +10,15 @@
       "types": "./lib/typescript/src/index.d.ts",
       "default": "./lib/module/index.js"
     },
+    "./assets/*": {
+      "source": "./assets/*",
+      "default": "./assets/*"
+    },
     "./package.json": "./package.json"
   },
   "files": [
     "src",
+    "assets",
     "lib",
     "android",
     "ios",
