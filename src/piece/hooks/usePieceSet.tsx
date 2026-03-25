@@ -1,9 +1,12 @@
-import { useState, useCallback, useMemo } from 'react';
+import React, { useState, useCallback, useMemo } from 'react';
 import type { PieceSet } from '../types/pieceSet.types';
 import type { Piece } from '../types/piece.types';
 import SvgPiece from '../components/SvgPiece';
 
-type SvgPieceMap = Record<string, Record<string, React.ReactElement>>;
+type SvgPieceMap = Record<
+  Piece['player'],
+  Record<Piece['type'], React.ReactElement>
+>;
 
 export const usePieceSet = (
   initialPieceSet: PieceSet,
