@@ -8,7 +8,7 @@ interface SvgPieceProps {
 
 export default function SvgPiece({ size, uri }: SvgPieceProps) {
   return (
-    <View style={{ width: size, height: size, ...styles.container }}>
+    <View style={[{ width: size, height: size }, styles.container]}>
       <SvgUri width={size} height={size} uri={uri} />
     </View>
   );

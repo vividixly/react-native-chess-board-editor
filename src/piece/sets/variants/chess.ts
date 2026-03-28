@@ -10,7 +10,7 @@ export const chess: PieceSet = {
       r: assetToUri(require('../../../../assets/pieces/chess/w/r.svg'))!,
       q: assetToUri(require('../../../../assets/pieces/chess/w/q.svg'))!,
       k: assetToUri(require('../../../../assets/pieces/chess/w/k.svg'))!,
-    },
+    } as const,
     b: {
       p: assetToUri(require('../../../../assets/pieces/chess/b/p.svg'))!,
       n: assetToUri(require('../../../../assets/pieces/chess/b/n.svg'))!,
@@ -18,7 +18,7 @@ export const chess: PieceSet = {
       r: assetToUri(require('../../../../assets/pieces/chess/b/r.svg'))!,
       q: assetToUri(require('../../../../assets/pieces/chess/b/q.svg'))!,
       k: assetToUri(require('../../../../assets/pieces/chess/b/k.svg'))!,
-    },
-  },
-  name: 'chess',
+    } as const,
+  } as const,
+  name: 'chess' as const,
 };
