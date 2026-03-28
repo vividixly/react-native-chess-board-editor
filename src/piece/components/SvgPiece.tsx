@@ -1,3 +1,4 @@
+import { StyleSheet, View } from 'react-native';
 import { SvgUri } from 'react-native-svg';
 
 interface SvgPieceProps {
@@ -6,5 +7,16 @@ interface SvgPieceProps {
 }
 
 export default function SvgPiece({ size, uri }: SvgPieceProps) {
-  return <SvgUri width={size} height={size} uri={uri} />;
+  return (
+    <View style={{ width: size, height: size, ...styles.container }}>
+      <SvgUri width={size} height={size} uri={uri} />
+    </View>
+  );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
