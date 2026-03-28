@@ -35,8 +35,8 @@ export const usePieceSet = (
   }, [pieceSet, pieceSize]);
 
   const getSvgPiece = useCallback(
-    (piece: Piece) => {
-      return svgPieceMap[piece.player]?.[piece.type];
+    (player: Piece['player'], type: Piece['type']) => {
+      return svgPieceMap[player]?.[type];
     },
     [svgPieceMap]
   );
