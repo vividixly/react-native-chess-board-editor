@@ -10,7 +10,7 @@ interface SvgSquareProps {
 
 export default function SvgSquare({ size, color, children }: SvgSquareProps) {
   return (
-    <View style={{ width: size, height: size, ...styles.container }}>
+    <View style={[{ width: size, height: size }, styles.container]}>
       <Svg width={size} height={size} style={StyleSheet.absoluteFill}>
         <Rect width={size} height={size} fill={color} />
       </Svg>
@@ -21,7 +21,6 @@ export default function SvgSquare({ size, color, children }: SvgSquareProps) {
 
 const styles = StyleSheet.create({
   container: {
-    position: 'relative',
     alignItems: 'center',
     justifyContent: 'center',
   },

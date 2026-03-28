@@ -1,8 +1,3 @@
-export { type Player, type PlayerSet, usePlayerSet } from './player';
-export {
-  type Square,
-  type SquareSet,
-  useSquareSet,
-  SquareSets,
-} from './square';
-export { type Piece, type PieceSet, usePieceSet, PieceSets } from './piece';
+export { type Player, type PlayerSet, PlayerSets } from './player';
+export { type Square, type SquareSet, SquareSets } from './square';
+export { type Piece, type PieceSet, PieceSets } from './piece';
