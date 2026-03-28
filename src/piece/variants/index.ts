@@ -1,1 +1,0 @@
-export { chess } from './chess';
